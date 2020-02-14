@@ -1,0 +1,40 @@
+[
+  {
+    "groupKey": "Male",
+    "groupValues": [
+      {
+        "name": "Garfield",
+        "type": "Cat"
+      },
+      {
+        "name": "Jim",
+        "type": "Cat"
+      },
+      {
+        "name": "Max",
+        "type": "Cat"
+      },
+      {
+        "name": "Tom",
+        "type": "Cat"
+      }
+    ]
+  },
+  {
+    "groupKey": "Female",
+    "groupValues": [
+      {
+        "name": "Garfield",
+        "type": "Cat"
+      },
+      {
+        "name": "Simba",
+        "type": "Cat"
+      },
+      {
+        "name": "Tabby",
+        "type": "Cat"
+      }
+    ]
+  }
+]
