@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
 
   errorMessage = 'Loading failed.';
 
-  constructor(private httpClient: HttpClient, private weatherService: CurrentWeatherService) {
+  constructor(private weatherService: CurrentWeatherService) {
 
   }
 

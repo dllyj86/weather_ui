@@ -38,7 +38,7 @@ export class CurrentWeatherTableComponent implements OnInit, OnDestroy {
 
     this.currentWeatherSub = this.currentWeather$.subscribe((weather: CurrentWeatherModel) => {
       this.tableDataSource = [];
-      for(const key in weather) {
+      for (const key in weather) {
         this.tableDataSource.push({
           label: key,
           value: weather[key]
@@ -51,12 +51,7 @@ export class CurrentWeatherTableComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    if(this.currentWeatherSub) {
-      this.currentWeatherSub.unsubscribe();
-    }
-
-    if(this.loadingSub) {
-      this.loadingSub.unsubscribe();
-    }
+    this.currentWeatherSub.unsubscribe();
+    this.loadingSub.unsubscribe();
   }
 }
