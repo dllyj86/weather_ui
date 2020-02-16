@@ -1,0 +1,9 @@
+<div class="city-dropdown-container">
+  <mat-form-field>
+    <mat-select placeholder="{{dropdownPlaceholder}}" (selectionChange)="handleSelection($event)">
+      <mat-option *ngFor="let cityName of cityNameList" [value]="cityName">
+        {{cityName}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

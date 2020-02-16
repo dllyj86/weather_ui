@@ -1,0 +1,17 @@
+.current-weather-table-container {
+
+  .loading-spinner {
+    margin: auto;
+  }
+
+  .current-weather-table {
+    margin: auto;
+    border-collapse: collapse;
+
+    .td-style {
+      border: 1px solid rgba(0,0,0,.12);
+      padding: 1rem;
+      text-align: left;
+    }
+  }
+}

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "code-test-pets": {
+    "weather_ui": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/code-test-pets",
+            "outputPath": "dist/weather_ui",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,19 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "code-test-pets:build"
+            "browserTarget": "weather_ui:build",
+            "proxyConfig": "src/proxy.conf.json"
           },
           "configurations": {
             "production": {
-              "browserTarget": "code-test-pets:build:production"
+              "browserTarget": "weather_ui:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "code-test-pets:build"
+            "browserTarget": "weather_ui:build"
           }
         },
         "test": {
@@ -110,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "code-test-pets:serve"
+            "devServerTarget": "weather_ui:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "code-test-pets:serve:production"
+              "devServerTarget": "weather_ui:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "code-test-pets"
+  "defaultProject": "weather_ui"
 }

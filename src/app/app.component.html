@@ -2,7 +2,7 @@
 <div class="app-component-container">
   <h1 class="app-title">{{title}}</h1>
   <mat-divider></mat-divider>
-  <mat-card>
-    <app-pets-list></app-pets-list>
-  </mat-card>
+  <app-error-message *ngIf="isLoadingFailed" [message]="errorMessage"></app-error-message>
+  <app-city-dropdown *ngIf="!isLoadingFailed" [cityNameList]="cityNameList" (selectCity)="queryCityWeather($event)"></app-city-dropdown>
+  <app-current-weather-table *ngIf="!isLoadingFailed" [isLoading$]="isLoading$" [currentWeather$]="currentWeather$" [isLoadingFailed]="isLoadingFailed"></app-current-weather-table>
 </div>

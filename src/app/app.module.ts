@@ -4,15 +4,17 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PetsListComponent } from './components/pets-list/pets-list.component';
 import { CustomMaterialModule } from './modules/custom-material/custom-material.module';
 import { ErrorMessageComponent } from './components/common/error-message/error-message.component';
+import { CityDropdownComponent } from './components/city-dropdown/city-dropdown.component';
+import { CurrentWeatherTableComponent } from './components/current-weather-table/current-weather-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PetsListComponent,
-    ErrorMessageComponent
+    ErrorMessageComponent,
+    CityDropdownComponent,
+    CurrentWeatherTableComponent
   ],
   imports: [
     BrowserModule,

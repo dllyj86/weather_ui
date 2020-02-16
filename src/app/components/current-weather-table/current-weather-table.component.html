@@ -1,0 +1,20 @@
+<div class="current-weather-table-container">
+  <mat-spinner *ngIf="isLoadingWeather" class="loading-spinner"></mat-spinner>
+  <table *ngIf="isLoaded" mat-table [dataSource]="tableDataSource" class="current-weather-table">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="label">
+      <td mat-cell *matCellDef="let element" class="td-style"> {{element.label}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="value">
+      <td mat-cell *matCellDef="let element" class="td-style"> {{element.value}} </td>
+    </ng-container>
+
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
