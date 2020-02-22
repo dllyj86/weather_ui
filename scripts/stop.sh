@@ -1,6 +1,6 @@
 #!/bin/sh
 
-app_id=`ps -ef | grep "weather_ui_log.log" | grep -v "grep" | awk '{print $2}'`
+app_id=`ps -ef | grep "node weather_ui_server.js" | grep -v "grep" | awk '{print $2}'`
 echo $app_id
 
 for id in $app_id
