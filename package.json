@@ -8,6 +8,7 @@
     "build": "ng build",
     "prod-build": "ng build --aot --prod",
     "test": "ng test --code-coverage",
+    "ci-test": "ng test --code-coverage --watch false",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

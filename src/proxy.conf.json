@@ -1,10 +1,10 @@
 {
   "/api/weather/citylist": {
-    "target": "http://localhost:8080",
+    "target": "http://localhost:8888",
     "secure": false
   },
   "/api/weather/current": {
-    "target": "http://localhost:8080",
+    "target": "http://localhost:8888",
     "secure": false
   }
 }

@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  API_HOST: 'http://localhost:4200',
   CITY_LIST_API: '/api/weather/citylist',
   CURRENT_WEATHER_API: '/api/weather/current'
 };

@@ -7,7 +7,7 @@ const cityList = require('./../mock/city-list-mock.json');
 const cityWeather = require('./../mock/city-weather-mock.json');
 
 
-describe('CurrentWeatherServiceService', () => {
+describe('CurrentWeatherService', () => {
 
   let service: CurrentWeatherService;
   let testingController: HttpTestingController;
@@ -30,7 +30,7 @@ describe('CurrentWeatherServiceService', () => {
       expect(list.length).toBe(3);
     })
 
-    const req = testingController.expectOne(environment.CITY_LIST_API);
+    const req = testingController.expectOne(environment.API_HOST + environment.CITY_LIST_API);
     expect(req.request.method).toEqual('GET');
     req.flush(cityList);
   });
@@ -42,7 +42,7 @@ describe('CurrentWeatherServiceService', () => {
       expect(weather.city).toEqual('Sydney');
     })
 
-    const req = testingController.expectOne(environment.CURRENT_WEATHER_API + '?city=Sydney');
+    const req = testingController.expectOne(environment.API_HOST + environment.CURRENT_WEATHER_API + '?city=Sydney');
     expect(req.request.method).toEqual('GET');
     req.flush(cityWeather);
   });
