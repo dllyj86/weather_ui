@@ -13,7 +13,7 @@ URL: <https://github.com/dllyj86/weather_ui>
 [Jenkins](http://52.76.30.89:8080/job/weather_ui_cicd/)  
 URL: <http://52.76.30.89:8080/job/weather_ui_cicd/>
 
-If you want to visit my Jenkins, please use user name `visitor` and password `12345678`.
+If you want to visit my Jenkins, please check user name and password in email.
 
 **Notice:**  
 If you want to run the build, please inform me in advance. I need to change my EC2 from t2.micro to a larger type or the Jenkins will crash.
@@ -30,7 +30,7 @@ Screenshots:
 
 ## Application URL
 
-[Weather](http://52.76.30.89:3300/)
+[Weather](http://52.76.30.89:3300/)  
 URL: <http://52.76.30.89:3300/>
 
 **Notice:**  
@@ -126,3 +126,13 @@ This file keeps application properties for production environment.
 1. Scripts in scripts folder are for AWS CodeDeploy.  
 
 2. appspec.yml is for AWS CodeDeploy.
+
+## Screenshots for application UI
+
+![screenshot 1](https://jimmy-demo-static-files.s3-ap-southeast-1.amazonaws.com/weather+ui+1.PNG)
+
+![screenshot 2](https://jimmy-demo-static-files.s3-ap-southeast-1.amazonaws.com/weather+ui+2.PNG)
+
+![screenshot 3](https://jimmy-demo-static-files.s3-ap-southeast-1.amazonaws.com/weather+ui+3.PNG)
+
+![screenshot 4](https://jimmy-demo-static-files.s3-ap-southeast-1.amazonaws.com/weather+ui+4.PNG)
