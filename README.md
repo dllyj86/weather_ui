@@ -53,7 +53,7 @@ You could use Angular CLI to generate components, services and so on. Please ref
 
 ## Build
 
-Built files are in `dist` folder
+Built files are in `dist` folder.
 
 **Notice:**  
 Run `npm run prod-build` to build the application for production. It **disabled** `aot` and `build-optimizer`. The reason is that my AWS EC2 resource is limited. My EC2 is t2.micro. It could not support the Jenkins to build Angular projects. When I run the build, the Jenkins will crash. Even though I changed the EC2 to t2.small (2GB memory), the build with aot and build-optimizer enabled will take long time and make the build failed.
@@ -103,16 +103,16 @@ This model keeps weather data.
 
 ### mocks
 
-1. city-list-mock.json
+1. city-list-mock.json  
 This is mock file for showing city dropdown.
 
-2. city-weather-mock.json
+2. city-weather-mock.json  
 This is mock file for showing city weather.
 
 ### environments
 
-1. environment
+1. environment  
 This file keeps application properties for dev environment.
 
-2. environment.prod
+2. environment.prod  
 This file keeps application properties for production environment.
