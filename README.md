@@ -10,8 +10,8 @@ URL: <https://github.com/dllyj86/weather_ui>
 
 ## Jenkins URL
 
-[Jenkins](http://52.76.30.89:8080/)  
-URL: <http://52.76.30.89:8080/>
+[Jenkins](http://52.76.30.89:8080/job/weather_ui_cicd/)  
+URL: <http://52.76.30.89:8080/job/weather_ui_cicd/>
 
 If you want to visit my Jenkins, please use user name `visitor` and password `12345678`.
 
@@ -31,6 +31,7 @@ Screenshots:
 ## Application URL
 
 [Weather](http://52.76.30.89:3300/)
+URL: <http://52.76.30.89:3300/>
 
 **Notice:**  
 This application was deployed in AWS Singapore region. When you access the application first time with a slow network, it will take a long time to load the page. Please wait until the loading completed.
